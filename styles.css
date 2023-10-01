@@ -120,13 +120,13 @@ h1 {
     font-family: 'Poppins', sans-serif;
 }
 
-a {
+a:not(#logo-link) {
     text-decoration: none;
     color: #ffffff;
     opacity: 50%;
 }
 
-a:hover {
+a:not(#logo-link):hover {
     color: white;
     opacity: 100%;
 }
@@ -157,120 +157,34 @@ a:hover {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-    top: -1950px;
+    top: -1900px;
     left: 0px;
     z-index: 0;
     font-size: 18px;
 }
 
-.timeline {
-    margin: 5em auto;
-    max-width: 34.15em;
-}
-
-.checkpoint {
-    max-width: 34em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    position: relative;
-    font-weight: 200;
-}
-
-.checkpoint h2 {
-    opacity: 50%;
+#list {
     color: white;
-    padding-bottom: 10px;
+    font-weight: 300;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+    top: 80px;
+    left: 4px;
+    list-style-type: none;
     text-align: center;
 }
 
-.checkpoint h2:hover {
-    color: white;
-    opacity: 100%;
-    cursor: default;
+li {
+    margin-bottom: 30px;
 }
 
-.checkpoint div {
-    border: 2px solid #888;
-    border-radius: 1em;
-    padding: 1.5em;
-}
-
-.checkpoint p {
-    line-height: 27px;
-    color: #ccc;
-}
-
-.checkpoint:nth-child(odd) {
-    border-left: 3px solid #888;
-    padding-left: 3em;
-    transform: translateX(17em);
-}
-
-.checkpoint:nth-child(even) {
-    border-left: 3px solid #888;
-    padding-left: 3em;
-    transform: translateX(-17em);
-}
-
-.checkpoint:nth-child(odd)::before, .checkpoint:nth-child(even)::before {
-    content: '';
-    background: #888;
-    width: 3em;
-    height: 3px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.checkpoint:nth-child(odd)::before {
-    left: 0;
-}
-
-.checkpoint:nth-child(even)::before {
-    right: 0;
-}
-
-.checkpoint:nth-child(odd) div::before, .checkpoint:nth-child(even) div::before {
-    content: '';
-    background: #fff;
-    width: 0.8em;
-    height: 0.8em;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 50%;
-}
-
-.checkpoint:nth-child(odd) div::before {
-    left: -0.5em;
-}
-
-.checkpoint:nth-child(even) div::before {
-    right: -0.5em;
-}
-
-.timeline {
-    width: 80vw;
-}
-
-.timeline .checkpoint {
-    width: 100%;
-    transform: none;
-    padding-left: 0;
-    padding-right: 0;
-    border: none;
-}
-
-.timeline .checkpoint::before {
-    width: 3px;
-    height: 4em;
-    top: -2em;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.timeline .checkpoint div::before {
-    top: -0.5em;
-    left: 50%;
-    transform: translateX(-50%);
+#discoveries {
+    position: relative;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+    top: -1500px;
 }
