@@ -12,6 +12,10 @@ html, body {
     background-color: black;
 }
 
+main {
+    height:100vh;
+}
+
 #hero {
     background-color: black;
 }
@@ -157,7 +161,7 @@ a:not(#logo-link):hover {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-    top: -1900px;
+    top: -1800px;
     left: 0px;
     z-index: 0;
     font-size: 18px;
@@ -180,7 +184,7 @@ li {
     margin-bottom: 30px;
 }
 
-#discoveries {
+#short-film {
     position: relative;
     display: block;
     height: auto;
@@ -188,3 +192,55 @@ li {
     max-width: 100%;
     top: -1500px;
 }
+
+.video {
+    position: absolute;
+    margin: auto;
+    top: 22vw;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+
+#quotes {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    top: -900px;
+    left: 0px;
+    z-index: 0;
+    font-size: 18px;
+    padding: 6em;   
+}
+
+#quote-text {
+    text-align: center;
+    padding: 4em;
+    font-weight: 300;
+}    
+
+#tribute-link {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 6em;
+}
+
+#resources {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    top: -900px;
+    left: 0px;
+    z-index: 0;
+    font-size: 18px;
+    padding: 6em;   
+    text-align: center;
+}
+
+.resources {
+    padding: 4em;
+}
+
